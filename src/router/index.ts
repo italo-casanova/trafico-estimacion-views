@@ -14,6 +14,16 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import('@/views/Home.vue'),
       },
+      {
+        path:'history',
+        name: 'History',
+        component: ()=> import('@/views/HistoryTraffic.vue'),
+      },
+      {
+        path:'current',
+        name:'Current',
+        component: ()=> import('@/views/CurrenTraffic.vue'),
+      }
     ],
   },
 ]
