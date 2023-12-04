@@ -1,8 +1,8 @@
 <template>
-  <v-container style="border-color: green;">
-    <v-row justify="center" class="flex-wrap">
+  <v-container fluid  style="border-color: green;">
+    <v-row fluid justify="center" class="flex-wrap">
       <v-col cols="auto" class="grow d-flex flex-column mr-16  ">
-        <v-row class="d-flex flex-column">
+        <v-row  fluid class="d-flex flex-column">
           <h1>Estimación de transito peatonal</h1>
           <p>Eliga opción</p>
         </v-row>
@@ -12,14 +12,14 @@
           height="50px"
           color="#922729"
           >
-            Histórico
+            <router-link to="/history" class="text-white">Histórico</router-link>
           </v-btn>
           <v-btn 
           width="200px"
           height="50px"
           color="#922729"
           >
-            Tiempo real
+            <router-link to="/current" class="text-white">Tiempo real</router-link>
           </v-btn>
         </v-row>
       </v-col>

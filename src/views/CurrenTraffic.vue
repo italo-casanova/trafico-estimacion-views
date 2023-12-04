@@ -3,7 +3,7 @@
     <v-container  fluid style="border-color: red;"  >
         <v-row  class="color-red">
             <v-col cols="8" class="d-flex">
-                <v-col>
+                <v-col cols="4">
                     <label for="" class="">Facultad</label>
                     <v-select
                     :items="items_facultad"
@@ -12,7 +12,7 @@
                     </v-select>
                 </v-col>
                 
-                <v-col>
+                <v-col cols="4">
                     <label for="">Intervalo de tiempo</label>
                     <v-select
                     :items="items_zona"
